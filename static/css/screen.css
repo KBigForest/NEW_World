@@ -2549,7 +2549,7 @@ textarea:focus {
   overflow: hidden;
 }
 .btn.btn-special {
-  background: #3e444d;
+  background: #3e444d63;
   display: flex;
   justify-content: center;
   line-height: 50px;
@@ -2566,11 +2566,19 @@ textarea:focus {
   white-space: nowrap;
 }
 .btn.btn-special:hover {
-  background: #abb4c1;
+  background: #90a0b5;
 }
+@media (max-width: 767px) {
+  .btn .btn.btn-special {
+  height: 30px;
+  line-height: 28px;
+  font-size: 12px;
+  padding: 0 5px;
+  min-width: 100px;
+  }
+  }
 
-
-.btn.btn-outlined {
+.btn .btn-outlined {
   color: #ffffff;
   height: 40px;
   line-height: 38px;
@@ -2585,6 +2593,19 @@ textarea:focus {
   min-width: 140px;
   
 }
+.btn.btn-outlined:hover {
+  background: #7f90b666;
+  color: white;
+}
+@media (max-width: 767px) {
+  .btn .btn-outlined {
+  height: 35px;
+  line-height: 33px;
+  font-size: 14px;
+  padding: 0 25px;
+  min-width: 120px;
+  }
+  }
 .btn.btn-outlined-black {
   color: black;
   height: 40px;
@@ -2600,10 +2621,7 @@ textarea:focus {
   min-width: 140px;
 }
 
-.btn.btn-outlined:hover {
-  background: #7f90b666;
-  color: white;
-}
+
 .btn.btn-default {
   position: relative;
   margin-top: 40px;
@@ -2836,7 +2854,7 @@ textarea:focus {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 200px 0;
+  padding: 160px 0;
 }
 
 .hero-box .hero-text h1,
@@ -3841,7 +3859,7 @@ dscript-time {
   line-height: 50px;
   color: #fff;
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid #0000006b;
   
 }
 .floating-sidebar .btn:hover {
