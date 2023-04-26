@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>BigForest</title>
+      <meta charset="utf-8">
+      <meta name="description" content="Traveling HTML5 Template" />
+      <meta name="author" content="Design Hooks" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
+      <link href="{{ url_for('static', filename='img/bigforest_icon.jpg') }}" type="image/x-icon" rel="shortcut icon" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+      $(document).ready(function() {
+         $('a[href^="#"]').on('click', function(event) {
+           var target = $(this.getAttribute('href'));
+           if( target.length ) {
+               event.preventDefault();
+               $('html, body').stop().animate({
+                   scrollTop: target.offset().top
+               }, 1000);
+           }
+         });
+       });
+      </script>
+
+      <link href="{{ url_for('static', filename='css/screen.css') }}" rel="stylesheet" />
+   
+   </head>
+   <body class="home" id="page">
+      <!-- Header -->
+      <header class="main-header" id="main">
+         <div class="container">
+            <div class="header-content">
+               <a href="/">
+                  <img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="site identity" />
+               </a>
+
+               <nav class="site-nav">
+                  <ul class="clean-list site-links">
+                     <li>
+                        <a href="#experience">experience</a>
+                     </li>
+                     <li>
+                        <a href="#club
+                        ">club</a>
+                     </li>
+                     <li>
+                        <a href="#award">award</a>
+                     </li>
+                     <li>
+                        <a href="#job">job</a>
+                     </li>
+                     <li>
+                        <a href="#education">Education</a>
+                     </li> 
+                  </ul>
+                  <a href="#project" class="btn btn-outlined">Project</a>
+               </nav>
+               <div class="floating-sidebar">
+                  <a href="#main" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo_side.png') }}" alt="Button 1" title="Main"><span>Main</span></a>
+                  <a href="#experience" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="Button 2" title="Experience"><span>Experience</span></a>
+                  <a href="#club" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="Button 3" title="Club"><span>Club</span></a>
+                  <a href="#award" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="Button 4" title="Award"><span>Award</span></a>
+                  <a href="#job" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="Button 5" title="Job"><span>Job</span></a>
+                  <a href="#education" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="Button 6" title="Education"><span>Education</span></a>
+                  <a href="#project" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="Button 7" title="Project"><span>Project</span></a>
+                  <script>
+                     const buttons = document.querySelectorAll('.btn');
+                     buttons.forEach(button => {
+                     button.addEventListener('mouseover', () => {
+                        const span = button.querySelector('span');
+                        span.style.display = 'inline-block';
+                     });
+
+                     button.addEventListener('mouseout', () => {
+                        const span = button.querySelector('span');
+                        span.style.display = 'none';
+                     });
+                     });
+                  </script>
+                </div> 
+            </div>
+         </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="content-box">
+         <!-- Hero Section -->
+         <section class="section section-hero">
+            <div class="hero-box">
+               <div class="container">
+                  <div class="hero-text align-center">
+                     <h1>Hello, Visitor</h1>
+                     <p>This is made for introducing BigForest</p>
+                  </div>
+               </div>
+            </div>
+            <script>
+               window.onload = function() {
+                  var heroBox = document.querySelector('.hero-text p');
+                  heroBox.style.opacity = 1;
+                  var heroBox = document.querySelector('.hero-text h1');
+                  heroBox.style.opacity = 1;
+               };
+            </script>
+            
+         <!-- Destinations Section -->
+         <section class="section section-destination">
+            <!-- Title -->
+            <div class="section-title">
+               <div class="container">
+                  <br>
+                  <h2 class="title">who is he?</h2>
+                  <p class="sub-title">간단한 인적사항</p>
+               </div>
+            <br>
+            </div>
+            <div class="container">
+               <div class="statistics-box-main">
+                  <div class="statistics-item">
+                     <img src="{{ url_for('static', filename='img/introduce.jpg') }}" alt="Image">
+                  </div>
+                  <div class="statistics-item"> 
+                     <p>희망 직무는 물류관리, 물류서비스기획, 물류신기술 분야 등이 있습니다.</p>
+                     <a href="https://brook-variraptor-54f.notion.site/Notion-6fd7d00198f3421992258e3f5b0f481d">평소 물류관련 관심 기사 스크랩</a>
+                  </div> 
+                  <div class="statistics-item"> 
+                     <p>Your statistics item description goes here.</p>
+                  </div>
+                     <div class="statistics-item-introduce" style="margin-top: 10px; width: 100%">
+                        <br>
+                        <p class="title">이름</p>
+                        <p class="sub">김한림</p>
+                        <p class="title">거주지</p> 
+                        <p class="sub">대구광역시 북구</p>
+                        <p class="title">학력</p>
+                        <p class="sub">경북대학교 4학년 재학중</p>
+                        <p class="title">전공</p>
+                        <p class="sub">경영학</p>
+                        <p class="title">융합전공</p>
+                        <p class="sub">비즈니스인텔리전스</p>
+                        <p class="sub">(통계학, 컴퓨터공학)</p>
+                     </div>
+                  <div class="statistics-item-introduce">
+                     <p class="title">생년월일</p>
+                     <p class="sub">1997.02.28.</p>
+                     <p class="title">전화번호</p>
+                     <p class="sub">010-4663-7623</p>
+                     <p class="title">이메일</p>
+                     <p class="sub">gksfka12@naver.com</p>
+                     <p class="title">Github</p> 
+                     <p class="sub"><a href="https://github.com/KBigForest" style="color: blue;">https://github.com/KBigForest<a></p>
+                     <p class="title">INSTAGRAM</p>
+                     <p class="sub">@k_big_forest</p>
+                  </div>
+               </div>
+            </div>
+            <!-- resume -->
+            <section id="resume" class="resume">
+               <div class="section-title">
+                  <div class="container">
+                     <br>
+                     <h2 class="title">summary</h2>
+                     
+                  </div> 
+               </div>
+               <div class="container" data-aos="fade-up"  style="margin-top: 70px">
+                  <div class="row">
+                     <div class="col-md-12 col-xs-24">
+                        <div class="resume-item pb-0">
+                           <h4>2016.03 ~</h4>
+                           <p><em>경북대학교 경영학부 비즈니스인텔리전스 전공 (현재 4학년 1학기 수료)</em></p>
+                           <p>컴퓨터공학, 통계학 관련 이수</p>
+                           <ul>
+                              <li>기초프로그래밍</li>
+                              <li>컴퓨터학개론</li>
+                              <li>이산수학</li>
+                              <li>R프로그래밍</li>
+                              <li>회귀분석 및 실험</li>
+                              <li>기초확률론</li>
+                              <li>경영데이터분석</li>
+                              <li>경영데이터시각화</li>
+                           </ul>
+                        </div>
+                        <div class="resume-item">
+                           <h4>2018.05 ~ 2020.04</h4>
+                           <p><em>공군 운전병 특기 만기전역</em></p>
+                           <ul>
+                              <li>사무 행정 및 운전 업무 수행</li>
+                           </ul>
+                        </div>
+                        <div class="resume-item-final">
+                           <h4>2020.04 ~ 2020.12</h4>
+                           <p><em>한국장학재단 계약직 근무</em></p>
+                           <ul>
+                              <li>사무 보조 업무</li>
+                              <li>근무 기간 중 물류관리사 취득</li>
+                           </ul>
+                        </div>
+                        
+                     </div>
+                     <div class="col-md-12 col-xs-24">
+                        <div class="resume-item">
+                           <h4>2021.02</h4>
+                           <p><em>감귤 판매 및 마케팅</em></p>
+                           <ul>
+                              <li>마케팅에서 시작하여 수확부터 배송까지 전 단계 직접 수행</li>
+                           </ul>
+                        </div>
+                        <div class="resume-item pb-0">
+                           <h4>2021.03 ~ 2022.08</h4>
+                           <p><em>물류동아리 KITS 활동</em></p>
+                           <ul>
+                              <li>대구경북모의상사중재대회 최우수상</li>
+                              <li>직무체험공모전 우수상</li>
+                              <li>동아리 임원 및 회장 활동</li>
+                              <li>물류 회사 방문, 연사 초청, 수출아이템  발굴대회 개최 등 다양한 기획 활동</li>
+                           </ul>
+                        </div>
+                        <div class="resume-item">
+                           <h4>2022.08 ~ 2022.12</h4>
+                           <p><em>공모전 및 대외활동</em></p>
+                           <ul>
+                              <li>CJ 올리브네트웍스 리모트 인턴십 참여 및 우수참가자 선정</li>
+                              <li>포스코인터내셔널 신사업 아이디어 공모전 본선진출</li>
+                           </ul>
+                        </div>
+                        <div class="resume-item">
+                        <h4>2022.12~2023.06</h4>
+                           <p><em>경북대학교 빅데이터전문가 양성과정</em></p>
+                           <ul>
+                              <li>대구경북모의상사중재대회 최우수상</li>
+                              <li>직무체험공모전 우수상</li>
+                           <ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </section>
+      </div>
+      <div class="content-box">      
+         <section class="section section-destination">   
+               <div class="section-title">
+                  <div class="container">
+                     <hr class="hr-line">
+                     <br>
+                     <h2 class="title">Certification</h2>
+                     <p class="sub-title">희망직무와 연관된 자격증 보유</p>
+                  </div>
+               </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">📑 운전면허 1종 보통(운전병 출신)</p>
+                        <p class='script-time'>2016.12.</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">📑 한국사능력검정 1급</p>
+                        <p class='script-time'>2019.03.</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">📑 유통관리사 2급</p>
+                        <p class='script-time'>2019.08.</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">📑 물류관리사</p>
+                        <p class='script-time'>2020.08.</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">📑 데이터분석 준전문가(ADsP)</p>
+                        <p class='script-time'>2023.03.</p>
+                     </div> 
+                  </div>
+               </div>
+               
+            </div>   
+         </section>
+         <section class="section section-destination">    
+            <div class="section-title">
+               <div class="container">
+                  <hr class="hr-line">
+                  <br>
+                  <h2 class="title">Hard Skill</h2>     
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-python" class="toggle">▼</span> PYTHON</p>
+                        <p id="python"class="content">✓ 기초적인 문법에 대한 이해를 가지고 있으며 다양한 API를 활용한 프로그램을 만들 수 있습니다.</p>            
+                     </div> 
+                  </div>
+                  <script>
+                     $(document).ready(function() {
+                        const toggle = $('.project #t-python');
+                        const content = $('.project #python');
+                        content.show();
+                        toggle.click(function() {
+                        content.slideToggle(function() {
+                        toggle.text(content.is(':visible') ? '▼' : '▶');
+                           });
+                        });
+                     });
+                  </script>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                       <p class="script-title-intro">🌿 <span id="t-notion" class="toggle">▼</span> NOTION</p>
+                       <p id="notion" class="content">✓ 노션 기본 문법을 사용할 수 있으며 협업 툴로서 워크스페이스를 제작하고 페이지 생성 및 관리가 가능합니다.</p>
+                     </div>
+                  </div>
+                   
+                  <script>
+                     $(document).ready(function() {
+                        const toggle = $('.project #t-notion');
+                        const content = $('.project #notion');
+                        content.show();
+                        toggle.click(function() {
+                        content.slideToggle(function() {
+                        toggle.text(content.is(':visible') ? '▼' : '▶');
+                           });
+                        });
+                     });
+                  </script>
+               </div>
+            </div>      
+            <div class="container">
+               <div class="row">      
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-flask" class="toggle">▼</span> FLASK</p>
+                        <p id="flask" class="content">✓ 기본적인 작동방식을 이해하고 있으며 게시글 작성 및 수정 삭제 기능을 추가할 수 있습니다.</p>
+                        <p id="flask" class="content">✓ 해당 <b>포트폴리오</b> 역시, 플라스크로 구현하였습니다.</p>
+                     </div>
+                     <script>
+                        $(document).ready(function() {
+                          const toggle = $('.project #t-flask');
+                          const content = $('.project #flask');
+                          content.show(); 
+                          toggle.click(function() {
+                           content.slideToggle(function() {
+                           toggle.text(content.is(':visible') ? '▼' : '▶');
+                              });
+                           });
+                        });
+                     </script> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-excel" class="toggle">▼</span> EXCEL</p>
+                        <p id="excel" class="content">✓ 군대에서 운전행정병으로, 장학재단에서 사무보조로 근무하며 엑셀에 대한 기본 능력을 쌓았습니다.</p>
+                        <p id="excel" class="content">✓ 리모트인턴십 교육으로 피벗테이블, 필터링, 함수 사용법 등 다양한 스킬을 배워 활용 가능합니다.</p>
+                     </div>
+                     <script>
+                        $(document).ready(function() {
+                          const toggle = $('.project #t-excel');
+                          const content = $('.project #excel');
+                          content.show();
+                          toggle.click(function() {
+                           content.slideToggle(function() {
+                           toggle.text(content.is(':visible') ? '▼' : '▶');
+                              });
+                           });
+                        });
+                     </script>  
+                  </div>
+               </div>
+            </div>      
+            <div class="container">
+               <div class="row">      
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-htmlcss" class="toggle">▼</span> HTML/CSS</p>
+                        <p id="htmlcss" class="content">✓ 플라스크 내 웹페이지를 구성하는 요소를 나타낼 수 있는 능력을 가지고 있습니다.</p>
+                        <p id="htmlcss" class="content">✓ 해당 페이지 내 <b>상세보기, 간단한 애니메이션 효과(js) 기능</b>을 구현했습니다.</p>
+                     </div>
+                     <script>
+                        $(document).ready(function() {
+                          const toggle = $('.project #t-htmlcss');
+                          const content = $('.project #htmlcss');
+                          content.show();
+                          toggle.click(function() {
+                           content.slideToggle(function() {
+                           toggle.text(content.is(':visible') ? '▼' : '▶');
+                              });
+                           });
+                        });
+                     </script>   
+                  </div>
+                  
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-powerpoint" class="toggle">▼</span> MS PowerPoint</p>
+                        <p id="htmlcss" class="content">
+                        <p id="powerpoint" class="content">✓ <b>다양한 공모전과 기획서 작성</b>을 통해 특정 주제를 효과적으로 나타낼 수 있습니다.</p>
+                        <p id="powerpoint" class="content">✓ 주제 전달 및 설득을 위한 애니메이션, 글꼴 크기, 디자인 구현이 가능합니다.</p>
+                     </div>
+                     <script>
+                        $(document).ready(function() {
+                           const toggle = $('.project #t-powerpoint');
+                           const content = $('.project #powerpoint');
+                           content.show();
+                           toggle.click(function() {
+                           content.slideToggle(function() {
+                           toggle.text(content.is(':visible') ? '▼' : '▶');
+                              });
+                           });
+                        });
+                     </script> 
+                  </div>
+               </div>
+            </div>      
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                         <p class="script-title-intro">🌿 <span id="t-scikit-learn" class="toggle">▼</span> SCIKIT-LEARN</p>
+                         <p id="scikit-learn" class="content">
+                             ✓ 데이터 마이닝 프로세스 구성 경험을 가지고 있습니다.<br>
+                             ✓ 머신러닝 모델에 pycarrot, GridsearchCV 등 최적화 모듈 및 함수를 사용하여 최선의 모델을 찾을 수 있습니다.<br>
+                             ✓ 코사인 유사도를 통한 추천 알고리즘을 구현하였습니다.
+                         </p>
+                     </div>
+                     <script>
+                         $(document).ready(function() {
+                              const toggle = $('.project #t-scikit-learn');
+                              const content = $('.project #scikit-learn');
+                              content.show();
+                              toggle.click(function() {
+                                 content.slideToggle(function() {
+                                 toggle.text(content.is(':visible') ? '▼' : '▶');
+                                 });
+                              });
+                           });
+                     </script> 
+                  </div>    
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                         <p class="script-title-intro">🌿 <span id="t-word" class="toggle">▼</span> MS WORD</p>
+                         <p id="word" class="content">
+                             ✓ <b>기획안</b>을 작성해본 경험이 있습니다.<br>
+                             ✓ <b>회의록</b> 작성 경험이 있습니다.
+                             ✓ <b>회사 방문 제안서, 견적 요청서</b> 등 다양한 문서 작성 경험이 있습니다.<br>
+                         </p>
+                     </div>
+                     <script>
+                         $(document).ready(function() {
+                             const toggle = $('.project #t-word');
+                             const content = $('.project #word');
+                             content.show();
+                             toggle.click(function() {
+                              content.slideToggle(function() {
+                              toggle.text(content.is(':visible') ? '▼' : '▶');
+                                 });
+                              });
+                         });
+                     </script> 
+                 </div>
+               </div>
+            </div>      
+            <div class="container">
+               <div class="row"> 
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                         <p class="script-title-intro">🌿 <span id="t-tensorflow" class="toggle">▼</span> TENSORFLOW</p>
+                         <p id="tensorflow" class="content">
+                             ✓ 클래스를 통해 퍼셉트론 구현 및 기본적인 모델을 작성할 수 있습니다.<br>
+                             ✓ 전이학습 모델을 통한 CNN 분류모델을 구현할 수 있습니다.<br>
+                             ✓ LSTM을 통한 긍/부정 언어 생성 모델을 구현한 경험이 있습니다.
+                         </p>
+                     </div>
+                     <script>
+                         $(document).ready(function() {
+                             const toggle = $('.project #t-tensorflow');
+                             const content = $('.project #tensorflow');
+                             content.show();
+                             toggle.click(function() {
+                              content.slideToggle(function() {
+                              toggle.text(content.is(':visible') ? '▼' : '▶');
+                                 });
+                              });
+                         });
+                     </script> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                         <p class="script-title-intro">🌿 <span id="t-tableau" class="toggle">▼</span> TABLEAU</p>
+                         <p id="tableau" class="content">
+                             ✓ 태블로를 통해 시각화 발표자료를 작성할 수 있습니다.
+                         </p>
+                     </div>
+                     <script>
+                         $(document).ready(function() {
+                             const toggle = $('.project #t-tableau');
+                             const content = $('.project #tableau');
+                             content.show();
+                             toggle.click(function() {
+                              content.slideToggle(function() {
+                              toggle.text(content.is(':visible') ? '▼' : '▶');
+                                 });
+                              });
+                         });
+                     </script> 
+                 </div>
+               </div>
+            </div>      
+            <div class="container">
+               <div class="row">   
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                       <p class="script-title-intro">🌿 <span id="t-r" class="toggle">▼</span> R</p>
+                       <div id="r" class="content">
+                         <p>✓ 기본적인 R문법 활용이 가능합니다.</p>
+                         <p>✓ R을 통한 회귀분석 경험이 있습니다.</p>
+                         <p>✓ R을 사용하여 워드클라우드를 구현한 경험이 있습니다.</p>
+                       </div>
+                     </div>
+                     <script>
+                       $(document).ready(function() {
+                        const toggle = $('.project #t-r');
+                        const content = $('.project #r');
+                        content.show();
+                        toggle.click(function() {
+                           content.slideToggle(function() {
+                           toggle.text(content.is(':visible') ? '▼' : '▶');
+                              });
+                           });
+                        });
+                     </script>
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-sql" class="toggle">▼</span> SQL</p>
+                        <div id="sql" class="content">
+                           <p>✓ 기본적인 문법을 통한 쿼리문 작성 경험과 간단한 데이터베이스 구축 경험이 있습니다.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <script>
+                     $(document).ready(function() {
+                        const toggle = $('.project #t-sql');
+                        const content = $('.project #sql');
+                        content.show();
+                        toggle.click(function() {
+                           content.slideToggle(function() {
+                              toggle.text(content.is(':visible') ? '▼' : '▶');
+                           });
+                        });
+                     });
+                  </script>
+               </div>
+            </div>      
+            <div class="container">
+               <div class="row">   
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-ps" class="toggle">▼</span> ADOBE PHOTOSHOP</p>
+                        <div id="ps" class="content">
+                           <p>✓ 동아리 포스터 디자인 경험이 있습니다.</p>
+                           <p>✓ 공익광고 포스터 제작 경험이 있습니다.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <script>
+                     $(document).ready(function() {
+                        const toggle = $('.project #t-ps');
+                        const content = $('.project #ps');
+                        content.show(); // 기본적으로 content를 보여줍니다.
+                        toggle.click(function() {
+                           content.slideToggle(function() {
+                              toggle.text(content.is(':visible') ? '▼' : '▶');
+                           });
+                        });
+                     });
+                  </script>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🌿 <span id="t-pm" class="toggle">▼</span> ADOBE PREMIERE</p>
+                        <div id="pm" class="content">
+                           <p>✓ 워크맨 패러디 영상 제작 경험이 있습니다.</p>
+                        </div>
+                     </div> 
+                  </div>
+                  <script>
+                     $(document).ready(function() {
+                        const toggle = $('.project #t-pm');
+                        const content = $('.project #pm');
+                        content.show(); // 기본적으로 content를 보여줍니다.
+                        toggle.click(function() {
+                           content.slideToggle(function() {
+                              toggle.text(content.is(':visible') ? '▼' : '▶');
+                           });
+                        });
+                     });
+                  </script>
+               </div>
+            </div>
+            <br><br>
+            <div class="section-title">
+               <div class="container">
+                  <hr class="hr-line">
+                  <br>
+                  <h2 class="title">Soft Skill</h2>
+                  
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 Idea Bank!</p>            
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 계획성 [극J]</p>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 정리 습관</p>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 기획력</p>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 추진력</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 커뮤니케이션 능력</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 열정</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 리더십</p>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title-intro">🍦 발표력</p>
+                     </div> 
+                  </div>
+               </div>
+            </div>   
+            <br>
+            <br>
+            <!-- Parallax Box -->
+            <div class="parallax-box" id="experience" >
+               <div class="container" >
+                  <div class="text align-center">
+                     <h1>experience</h1>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Hero Section -->
+         <section class="section section-hero">
+               <br>
+               <!-- Statistics Box -->
+               <div class="container">
+                  <div class="statistics-box">
+                     <div class="statistics-item">
+                        <p class="value">KEYWORD</p>
+                        <p class="title"><b>도전</b>을 즐기고 <b>행동</b>하는 사람</p>
+                        <p class="title">배우려는 <b>의지와 열정</b>을 가지고 있는 인재</p>
+                        <p class="title">다양한 경험을 통한 <b>문제해결 능력</b>과 <b>성과</b></p>
+                     </div>
+                     <div class="statistics-item">
+                        <div class="circle">
+                           <img src="{{ url_for('static', filename='img/main_img.jpg') }}" alt="Image">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- Destinations Section -->
+         <section class="section section-destination" id="club">
+            <!-- Title -->
+            <div class="section-title">
+               <div class="container">
+                  <br>
+                  <h2 class="title">academic club</h2> 
+               </div> 
+            </div>
+            
+            <!-- Content -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <h4>✍️ 물류·무역동아리 KITS 활동</h4>
+                        <p class='script-time'>2021.03. ~ 2022.08.</p>
+                        <p class="script-title"><em>21년 2학기 임원</em></p>
+                        <button id="btn1" class="btn-details">상세보기</button>
+                        <div class="minfix">   
+                           <div id="details1" class="details" style="display:none">
+                              <ul>
+                                 <li>동아리 회계 및 장부 관리</li>
+                                 <li>동아리 홍보 포스터 제작</li>
+                                 <li>대구경북 모의상사 중재대회 행사 참여 및 행사 보조</li>
+                              </ul>   
+                           </div>
+                        </div>
+                        
+                        <script>
+                           const btn1 = document.querySelector('#btn1');
+                           const details1 = document.querySelector('#details1');
+                           btn1.addEventListener('click', function() {
+                           if (details1.style.display === 'none') {
+                              details1.style.display = 'block';
+                              btn1.textContent = '상세닫기';
+                           } else {
+                              details1.style.display = 'none';
+                              btn1.textContent = '상세보기';
+                           }
+                           });
+
+                        </script>
+                     </div>
+                  </div>
+            
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                        <span class="boats-qty">1</span>
+      
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Figueira da Fox</h4>
+                              <p class="country">Portugal</p>
+                           </div>
+                        </div>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title"><em>22년 1학기 회장</em></p>
+                        <p>목표 : 다수의 신입 동아리원을 감안하여, 물류·무역에 관심을 갖게 하는 계기 마련</p>
+                        <button id="btn2" class="btn-details">상세보기</button>
+                        <div class="minfix-more-m">
+                           <div id="details2" class="details" style="display:none">
+                              <ul>
+                                 <li>물류·무역 개념 세미나</li>
+                                 <li>물류기업 (주)새아로지스 방문 기획 및 추진</li>
+                                 <li><a href ="https://www.yeongnam.com/web/view.php?key=20220508010000982">영남일보 - 경북대 물류·무역동아리 새아로지스서 물류현장 견학</a></li>
+                                 <li>현직자 초청 수출 아이템 발굴대회 개최</li>
+                                 <li>현직자 섭외 연사초청</li>
+                                 <p class='subscript'>- 코트라(KOTRA) 자대 졸업생</p>
+                                 <p class='subscript'>- 레이크브릿지 장석준 대표</p>
+                                 <li>홈커밍데이(졸업 선배) 초청 행사 기획 및 진행</li>
+                                 <li>경북대학교 찾아가는 전공특강 멘토링 참여</li>
+                                 <p class='subscript'>- 경신고등학교, 능인고등학교 1, 2학년 대상</p>
+                              </ul>
+                           </div>
+                        </div>
+                        <script>
+                           const btn2 = document.querySelector('#btn2');
+                           const details2 = document.querySelector('#details2');
+
+                           btn2.addEventListener('click', function() {
+                           if (details2.style.display === 'none') {
+                              details2.style.display = 'block';
+                              btn2.textContent = '상세닫기';
+                           } else {
+                              details2.style.display = 'none';
+                              btn2.textContent = '상세보기';
+                           }
+                           });
+                        </script>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                        <span class="boats-qty">2</span>
+      
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Figueira da Fox</h4>
+                              <p class="country">Portugal</p>
+                           </div>
+                        </div>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box-small">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+      
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                     </div>  
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box-small">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+      
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                     </div>  
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box-small">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+      
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                     </div>  
+                  </div>
+               </div>
+            </div>
+              
+            
+               <!-- Title -->
+            <div class="section-title">
+               <div class="container">
+                  <hr class="hr-line" id="award"> 
+                  <br>
+                  <h2 class="title">award experience</h2>
+               </div> 
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <h4>🏆 공모전 수상 및 참가</h4>
+                        <p class="script-title">[공익광고협동조합]<em> 대학생 공익광고 공모전 장려상 수상</em></p>
+                        <p class='script-time'>2021.06.</p>
+                        <button id="btn3" class="btn-details">상세보기</button>
+                        <div class="minfix-m">   
+                           <div id="details3" class="details" style="display:none">
+                              <ul>
+                                 <li>주제: 청년에게 위로가 될 수 있는 포스터 제작</li>
+                                 <li>역할</li>
+                                 <p>- 공모전 조장</p>
+                                 <p>- 디자인 기획설명서 작성</p>
+                                 <p>- 포토샵 활용 포스터 디자인</p>
+                              </ul>
+                           </div>
+                        </div>
+                        <script>
+                           const btn3 = document.querySelector('#btn3');
+                           const details3 = document.querySelector('#details3');
+
+                           btn3.addEventListener('click', function() {
+                           if (details3.style.display === 'none') {
+                              details3.style.display = 'block';
+                              btn3.textContent = '상세닫기';
+                           } else {
+                              details3.style.display = 'none';
+                              btn3.textContent = '상세보기';
+                           }
+                           });
+                        </script>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                        <span class="boats-qty">1</span>
+      
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Figueira da Fox</h4>
+                              <p class="country">Portugal</p>
+                           </div>
+                        </div>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">         
+                        <p class="script-title">[한국상사중재원]<em> 대구경북 모의상사 중재대회 최우수상</em></p>
+                        <p class='script-time'>2021.11.</p>
+                        <button id="btn4" class="btn-details">상세보기</button>
+                        <div class="minfix">   
+                           <div id="details4" class="details" style="display:none">
+                              <ul>
+                                 <li>주제 : 벌크화물 관련 계약 위반에 대한  분쟁 상황에서 신청인/피신청인 자격으로 회사를 변호</li>
+                                 <li>동아리 최초 최우수상 수상</li>
+                                 <a href ="https://www.lecturernews.com/news/articleView.html?idxno=81450"><한국강사신문> 경북대학교, ‘대구경북 모의상사 중재대회’ 최우수상 수상
+                                 </a>
+                                 <li>인코텀즈, 무역계약 중재 규칙, CISG 뉴욕협약 등 다양한 무역 지식 활용</li>
+                              </ul>
+                           </div>
+                           <script>
+                              const btn4 = document.querySelector('#btn4');
+                              const details4 = document.querySelector('#details4');
+   
+                              btn4.addEventListener('click', function() {
+                              if (details4.style.display === 'none') {
+                                 details4.style.display = 'block';
+                                 btn4.textContent = '상세닫기';
+                              } else {
+                                 details4.style.display = 'none';
+                                 btn4.textContent = '상세보기';
+                              }
+                              });
+                           </script>
+                        </div>
+                     </div>
+                  </div>   
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                        <span class="boats-qty">1</span>
+      
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Figueira da Fox</h4>
+                              <p class="country">Portugal</p>
+                           </div>
+                        </div>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project"> 
+                        <p class="script-title">[경북대학교 인재개발원]<em> 직무체험공모전 우수상</em></p>
+                        <p class='script-time'>2021.09. ~ 2021.12.</p>
+                        <button id="btn5" class="btn-details">상세보기</button>
+                        <div class="minfix-more">   
+                           <div id="details5" class="details" style="display:none">
+                              <ul>
+                                 <li>주제: 고양이 모래삽 일본 수출 제안 및 추진</li>
+                                 <li>역할</li>          
+                                 <p>- 시장조사 및 아이템 발굴</p>
+                                 <p>- MFN 회사(배송대행업체) 및 코트라 컨택</p>
+                                 <p>- 해외진출 카탈로그 제공</p>
+                                 <p>- Adobe 프리미어 영상 편집</p>
+                                 <a href ="https://youtu.be/6bJCLwviWJ8"><유튜브> 직무체험공모전 팀 무진사 영상
+                                 </a>
+                              </ul>
+                           </div>
+                        </div>
+                        <script>
+                           const btn5 = document.querySelector('#btn5');
+                           const details5 = document.querySelector('#details5');
+
+                           btn5.addEventListener('click', function() {
+                           if (details5.style.display === 'none') {
+                              details5.style.display = 'block';
+                              btn5.textContent = '상세닫기';
+                           } else {
+                              details5.style.display = 'none';
+                              btn5.textContent = '상세보기';
+                           }
+                           });
+                        </script>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="destination-box">   
+                        <div class="box-cover">
+                           <a href="#">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                           </a>
+                        </div>
+                        <span class="boats-qty">1</span>
+      
+                        <div class="box-details">
+                           <div class="box-meta">
+                              <h4 class="city">Figueira da Fox</h4>
+                              <p class="country">Portugal</p>
+                           </div>
+                        </div>
+                     </div> 
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="load-boats-box">
+                     <div class="col-md-12 col-xs-24">
+                        <div class="project">
+                           <p class="script-title">[CJ올리브네트웍스]<em> 리모트 인턴십(Remote Intership) 우수참가자상</em></p>
+                           <p class='script-time'>2022.09. ~ 2022.12.</p>
+                           <button id="btn6" class="btn-details">상세보기</button>
+                           <div class="minfix-more-more">   
+                              <div id="details6" class="details" style="display:none">
+                                 <ul>
+                                    <li>소개 : 실제 직장 내 직무 업무 체험 및 DT 역량개발 지원 교육 프로그램
+                                    </li>
+                                    <li>프로젝트
+                                    </li>
+                                    <p>- 주제 : 코로나19 이후 흥행영화의 요인 분석을 통한 영화제작 전략 수립</p>
+                                    <p>- 인사이트 : 영화에 있어 작품의 스토리 중요성이 커지는 반면 각본에 들어가는 예산의 비중이 현저히 낮음을 확인하고 개선 제안</p>
+                                    <a href="https://drive.google.com/file/d/1V8vl5Gc58igmRoFTbaZqfCNeCuntq5-d/view?usp=share_link"><산출물> CJ리모트인턴십 최종보고서</a>        
+                                    <li>역할</li>
+                                    <p>- 프로젝트 팀장</p>
+                                    <p>- 전체 프로젝트 디랙팅 및 R 활용 분석</p>
+                                    <p>- ppt 제작</p>
+                                    <li>성과</li>
+                                    <p>- 데이터 분석 과정(문제정의, 데이터수집, 데이터 분석, 인사이트 도출)</p>
+                                    <p>- 프로젝트 조장으로 활동하며 참여를 독려시키고 결과물을 만들어 본인을 포함, 팀원 5명 중 <b>3명</b>이 우수참가자 선정</p>
+                                 </ul>
+                              </div>
+                           </div>
+                           <script>
+                              const btn6 = document.querySelector('#btn6');
+                              const details6 = document.querySelector('#details6');
+   
+                              btn6.addEventListener('click', function() {
+                              if (details6.style.display === 'none') {
+                                 details6.style.display = 'block';
+                                 btn6.textContent = '상세닫기';
+                              } else {
+                                 details6.style.display = 'none';
+                                 btn6.textContent = '상세보기';
+                              }
+                              });
+                           </script>   
+                        </div> 
+                     </div>
+                     <div class="col-md-12 col-xs-24">
+                        <div class="destination-box">   
+                           <div class="box-cover">
+                              <a href="#">
+                                 <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                              </a>
+                           </div>
+                           <span class="boats-qty">1</span>
+         
+                           <div class="box-details">
+                              <div class="box-meta">
+                                 <h4 class="city">Figueira da Fox</h4>
+                                 <p class="country">Portugal</p>
+                              </div>
+                           </div>
+                        </div> 
+                     </div>
+                     <div class="col-md-12 col-xs-24">
+                        <div class="destination-box">   
+                           <div class="box-cover">
+                              <a href="#">
+                                 <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                              </a>
+                           </div>
+                           <span class="boats-qty">1</span>
+         
+                           <div class="box-details">
+                              <div class="box-meta">
+                                 <h4 class="city">Figueira da Fox</h4>
+                                 <p class="country">Portugal</p>
+                              </div>
+                           </div>
+                        </div> 
+                     </div>   
+                     <div class="col-md-12 col-xs-24">
+                        <div class="project">
+                           <p class="script-title">[포스코 인터내셔널]<em> 신사업 아이디어 공모전 본선 진출</em></p>
+                           <p class='script-time'>2022.08. ~ 2022.10.</p>
+                           <button id="btn7" class="btn-details">상세보기</button>
+                           <div class="minfix-more-more">   
+                              <div id="details7" class="details" style="display:none">
+                                 <ul>
+                                    <li>주제 : 스마트팜의 중동 진출 제안
+                                    </li>
+                                    <li>역할
+                                    </li>
+                                    <p>- 전체 프로젝트 기획 및 디렉팅</p>
+                                    <p>- PPT 제작</p>
+                                    <p>- 프로젝트 채산성 분석</p>
+                                    <p>- 스마트팜 업체 알가팜텍 컨택 및 협조 승인</p>
+                                    <p>- ESG 적용방안 제시</p>
+                                    <a href="https://drive.google.com/file/d/1CfozPd4Y3hBWxa2rnlqr9TgvB04ypgLj/view?usp=share_link"><산출물> 신사업아이디어공모전_포스팜</a>
+                                    <li>경과 및 성과 </li>
+                                    <p>- 실제 기업 컨택하여 견적서 및 설비 관련 정보를 얻어냈음.</p>
+                                    <p>- PPT 제작 능력 대폭 향상</p>
+                                    <p>- 실질적이고 세부적인 진출안 제시</p>
+                                 </ul>
+                              </div>
+                           </div>
+                           <script>
+                              const btn7 = document.querySelector('#btn7');
+                              const details7 = document.querySelector('#details7');
+   
+                              btn7.addEventListener('click', function() {
+                              if (details7.style.display === 'none') {
+                                 details7.style.display = 'block';
+                                 btn7.textContent = '상세닫기';
+                              } else {
+                                 details7.style.display = 'none';
+                                 btn7.textContent = '상세보기';
+                              }
+                              });
+                           </script> 
+                        </div> 
+                     </div>
+                     <div class="col-md-12 col-xs-24">
+                        <div class="destination-box">   
+                           <div class="box-cover">
+                              <a href="#">
+                                 <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                              </a>
+                           </div>
+                           <span class="boats-qty">1</span>
+         
+                           <div class="box-details">
+                              <div class="box-meta">
+                                 <h4 class="city">Figueira da Fox</h4>
+                                 <p class="country">Portugal</p>
+                              </div>
+                           </div>
+                        </div> 
+                     </div>
+                     
+                     <div class="col-md-12 col-xs-24">
+                        <div class="destination-box">   
+                           <div class="box-cover">
+                              <a href="#">
+                                 <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                              </a>
+                           </div>
+                           <span class="boats-qty">1</span>
+         
+                           <div class="box-details">
+                              <div class="box-meta">
+                                 <h4 class="city">Figueira da Fox</h4>
+                                 <p class="country">Portugal</p>
+                              </div>
+                           </div>
+                        </div> 
+                     </div>   
+                  </div>   
+               </div>
+               <div class="align-center">
+                  <a href="#" class="btn btn-default btn-load-boats"><span class="text">추가적인 수상 및 참여 경력</span><i class="icon-spinner6"></i></a>
+               </div>
+            </section>
+             <!-- Parallax Box -->
+             <div class="parallax-box">
+               <div class="container">
+                  <div class="text align-center">
+                     <h1>additional experience</h1>
+                  </div>
+               </div>
+            </div>
+            <!-- Title -->
+            <div class="section-title" id="job">
+               <div class="container">
+                  <br>
+                  <h2 class="title">Job experience</h2>
+               </div> 
+            </div>
+            <div class="container">   
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <h4>🧑‍💼 사회·직무적 경험</h4>
+                        <p class="script-title"><em>한국장학재단 계약직 근무</em></p>
+                        <p class='script-time'>2020.04. ~ 2020.12.</p>
+                        <button id="btn8" class="btn-details">상세보기</button>
+                        <div class="minfix-m">   
+                           <div id="details8" class="details" style="display:none">
+                              <ul>
+                                 <li>담당 업무</li>
+                                 <p>- 희망사다리 장학사업 서류심사</p>
+                                 <p>- 장학 탈락자 cs업무</p>
+                                 <p>- 기타 사무 보조</p>
+                              </ul>
+                           </div>
+                        </div>   
+                        <script>
+                           const btn8 = document.querySelector('#btn8');
+                           const details8 = document.querySelector('#details8');
+
+                           btn8.addEventListener('click', function() {
+                           if (details8.style.display === 'none') {
+                              details8.style.display = 'block';
+                              btn8.textContent = '상세닫기';
+                           } else {
+                              details8.style.display = 'none';
+                              btn8.textContent = '상세보기';
+                           }
+                           });
+                        </script>
+                     </div>
+                  </div>      
+                   
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">  
+                        <p class="script-title"style="margin-top : 40px"><em>롯데시네마 드리미 근무</em></p>
+                        <p class='script-time'>2021.07. ~ 2022.06.</p>
+                        <button id="btn10" class="btn-details">상세보기</button>
+                        <div class="minfix-m">   
+                           <div id="details10" class="details" style="display:none">
+                              <ul>
+                                 <li>담당 업무</li>
+                                 <p>- 기본적인 손님 응대</p>
+                                 <p>- 창고 재고 조사 경험</p>
+                              </ul>
+                           </div>
+                        </div>
+                        <script>
+                           const btn10 = document.querySelector('#btn10');
+                           const details10 = document.querySelector('#details10');
+
+                           btn10.addEventListener('click', function() {
+                           if (details10.style.display === 'none') {
+                              details10.style.display = 'block';
+                              btn10.textContent = '상세닫기';
+                           } else {
+                              details10.style.display = 'none';
+                              btn10.textContent = '상세보기';
+                           }
+                           });
+                        </script>    
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">      
+                        <p class="script-title" ><em>감귤 마케팅 및 판매 경험</em></p>
+                        <p class='script-time'>2021.02.</p>
+                        <button id="btn9" class="btn-details">상세보기</button>
+                        <div class="minfix-more-more-more">   
+                           <div id="details9" class="details" style="display:none">
+                              <div class="destination-box">   
+                                 <div class="box-cover">
+                                    <a href="#">
+                                       <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image" />
+                                    </a>
+                                 </div>
+                                 <span class="boats-qty">730</span>
+               
+                                 <div class="box-details">
+                                    <div class="box-meta">
+                                       <h4 class="city">Figueira da Fox</h4>
+                                       <p class="country">Portugal</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <ul>
+                                 <li>경과 및 성과</li>
+                                 <p>- 에브리타임을 통한 감귤 판매</p>
+                                 <p>- 수확 인력 섭외 및 관리</p>
+                                 <p>- 총 40명의 고객에게 50box 판매</p>
+                                 <p>- 배송업체 섭외 및 라스트마일 CS관리</p>
+                                 <p>- 고객의 주소 오기입으로 인한 오배송 응대</p>
+                              </ul>
+                           </div>
+                        </div>
+                        <script>
+                           const btn9 = document.querySelector('#btn9');
+                           const details9 = document.querySelector('#details9');
+
+                           btn9.addEventListener('click', function() {
+                           if (details9.style.display === 'none') {
+                              details9.style.display = 'block';
+                              btn9.textContent = '상세닫기';
+                           } else {
+                              details9.style.display = 'none';
+                              btn9.textContent = '상세보기';
+                           }
+                           });
+                        </script>
+                     </div>
+                  </div>   
+               </div>
+               <hr class="hr-line" id="education">
+               <!-- Title -->
+               <div class="section-title">
+                  <div class="container">
+                     <br>
+                     <h2 class="title">
+                        Education experience</h2>
+                  </div> 
+               </div>
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <h4>✎ 교육경험</h4>
+                        <p class="script-title"><em>CJ 리모트인턴십 교육</em></p>
+                        <p class='script-time'>2022.10. ~ 2022. 12.</p>
+                        <button id="btn11" class="btn-details">상세보기</button>
+                        <div class="minfix">   
+                           <div id="details11" class="details" style="display:none">
+                              <ul>
+                                 <li>교육내용</li>
+                                 <p>- 데이터기반 의사결정 및 여러 통계기법</p>
+                                 <p>- 엑셀 및 power bi 툴 활용법</p>
+                                 
+                                 <li style="margin-left: 20px; font-size: 12px; color: gray;">
+                                    <a href="https://drive.google.com/file/d/10ubQGFbtoPAEkOcAk-EUCsWK9L9s4fdN/view?usp=share_link">CJ 리모트인턴십 수료증</a>
+                                 </li>
+                                 <li style="margin-left: 20px; font-size: 12px; color: gray;">
+                                    <a href="https://drive.google.com/file/d/1V6zD9KVDboXHjqU_DKW1X600IRi5uj-f/view?usp=share_link">CJ 리모트인턴십 DS(Data Science) 인증</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <script>
+                           const btn11 = document.querySelector('#btn11');
+                           const details11 = document.querySelector('#details11');
+
+                           btn11.addEventListener('click', function() {
+                           if (details11.style.display === 'none') {
+                              details11.style.display = 'block';
+                              btn11.textContent = '상세닫기';
+                           } else {
+                              details11.style.display = 'none';
+                              btn11.textContent = '상세보기';
+                           }
+                           });
+                        </script>
+                     </div>
+                  </div>   
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project">
+                        <p class="script-title" style="margin-top : 40px"><em>K-Digital training 빅데이터전문가 양성과정</em></p>
+                        <p class='script-time'>2022.12. ~</p>
+                        <button id="btn12" class="btn-details">상세보기[노션 링크]</button>
+                        <div class="minfix-more-more-more">   
+                           <div id="details12" class="details" style="display:none">
+                              <ul>
+                                 <li>교육내용 및 여러 학습 내용</li>
+                                 <p>- python 기본</p>
+                                 <p>- pandas 및  matplotlib 활용법</p>
+                                 <p>- numpy</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/numpy-77a719932c374a019b9a50ac94207eb6" style="margin-left: 12.5px;">[notion] numpy</a>
+                                 <p style="margin-top: 10px;">- Git 사용법</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/Git-8d586c2c976142d0a4795b33e5aa0437" style="margin-left: 12.5px;">[notion] Git</a>
+                                 <p style="margin-top: 10px;">- 웹 관련 크롤링</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/36c2fcd81b734af1bcbdd92c2effb569" style="margin-left: 12.5px;">[notion] 크롤링</a>
+                                 <p style="margin-top: 10px;">- Djanggo</p>
+                                 <p>- 데이터베이스 및 SQL</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/6500b9dbcecc4f1d9ea15026d5281dc1" style="margin-left: 12.5px;">[notion] 데이터베이스<a><br>
+                                 <a href="https://brook-variraptor-54f.notion.site/SQL-55d0286311ec40e4ac08bad6827b2b75" style="margin-left: 12.5px;">[notion] SQL<a>
+                                 <p style="margin-top: 10px;">- 기초 통계 및 탐색적 데이터 분석(EDA)</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/c2b4955a520546418c649ddab9a2a858" style="margin-left: 12.5px;">[notion] 기초 통계<a><br>
+                                 <a href="https://brook-variraptor-54f.notion.site/d27dc3143f5943f88527e2294b1d05e8" style="margin-left: 12.5px;">[notion] 데이터과학 통계<a>
+                                 <p style="margin-top: 10px; ">- R 기본</p>
+                                 <p>- 태블로 사용법<p>
+
+                                 <p>- 머신러닝 모델 및 최적화 기법</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/sklearn-b24d1b9f2ae74e32bdd9c73ff06ac35f" style="margin-left: 12.5px;">[notion] SCIKIT-LEARN 이상치 제거 방법</a><br>
+                                 <a href="https://brook-variraptor-54f.notion.site/3dc17751a18e4577895a467590714740" style="margin-left: 12.5px;">[notion] 데이터전처리 프로세스</a><br>
+                                 <a href="https://brook-variraptor-54f.notion.site/8cd1c94e80f844e3af540b3a3e38fe1d" style="margin-left: 12.5px;">[notion] 데이터 오버샘플링</a><br>
+                                 <a href="https://brook-variraptor-54f.notion.site/optuna-5e988381120d4c2a854ff96c461cfcbe" style="margin-left: 12.5px;">[notion] optuna를 활용한 하이퍼파라미터 최적화</a>
+                                 <p style="margin-top: 10px;">- 딥러닝 </p>
+                                 <a href="https://brook-variraptor-54f.notion.site/Deep-learning-4e8c6d2a1282438db3450d75b4f7aa67" style="margin-left: 12.5px;">[notion] 딥러닝 입문</a><br>
+                                 <a href="https://brook-variraptor-54f.notion.site/pytorch-6c545f6ae940421197cb18349e17c179" style="margin-left: 12.5px;">[notion] 딥러닝 pytorch</a><br>
+                                 <p style="margin-top: 10px;">- 딥러닝 RNN 및 자연어 처리</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/RNN-15b07d73c5284ea1ba5542358405d51f" style="margin-left: 12.5px;">[notion] 딥러닝 RNN과 친구들(LSTM, GRU)</a>
+                                 <p style="margin-top: 10px;">- FLASK</p>
+                                 <a href="https://brook-variraptor-54f.notion.site/Flask-Flask-ae30ab6057b34ea19d9050485ecd4c6b" style="margin-left: 12.5px;">[youtube] 생활코딩 플라스크 강의</a>  
+                              </ul>
+                           </div>
+                        </div>
+                        <script>
+                           const btn12 = document.querySelector('#btn12');
+                           const details12 = document.querySelector('#details12');
+
+                           btn12.addEventListener('click', function() {
+                           if (details12.style.display === 'none') {
+                              details12.style.display = 'block';
+                              btn12.textContent = '상세닫기';
+                           } else {
+                              details12.style.display = 'none';
+                              btn12.textContent = '상세보기[노션 링크]';
+                           }
+                           });
+                        </script>
+                     </div> 
+                  </div>
+               </div>
+            </div>
+            <!-- Parallax Box -->
+         <div class="parallax-box" id="project">
+            <div class="container">
+               <div class="text align-center">
+                  <h1>project</h1>
+               </div>
+            </div>
+         </div>
+
+          <!-- Title -->
+          <div class="section-title">
+            <div class="container">
+               <br>
+               <h2 class="title">project experience</h2>
+               <p class="sub-title">클릭 시 확인 가능</p>
+            </div> 
+         </div>
+
+         <!-- Boats Section -->
+         <section class="section section-boats">
+            <!-- Content -->
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project-center">
+                        <a href="#">
+                           <div class="polaroid">
+                              <img src="{{ url_for('static', filename='img/yum_project.jpg') }}" alt="destination image">
+                              <div class="caption">
+                                 <h3 class="title">[TEAM] 프로젝트 YUM+YUM- (클릭 시 PDF)</h3>
+                                 <p>
+                                 목적: 리뷰데이터 감성분석을 통한 맛집 찾기, 긍/부정 리뷰 생성기
+                                 </p>
+                                 <p>
+                                 담당: 기획, 로고 디자인, 인원 모집, 데이터 수집, 리뷰 생성모델 설계
+                                 </p>
+                              </div>
+                           </div>
+                        <a>   
+                     </div> 
+                  </div>
+                  
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project-center">
+                        <a href="#">
+                           <div class="polaroid">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image">
+                              <div class="caption">
+                                 <h3 class="title">프로젝트 제목</h3>
+                                 <p>
+                                 첫번쨰 프로젝트
+                                 </p>
+                              </div>
+                           </div>
+                        <a>
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project-center">
+                        <a href="#">
+                           <div class="polaroid">
+                              <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image">
+                              <div class="caption">
+                                 <h3 class="title">프로젝트 제목</h3>
+                                 <p>
+                                 첫번쨰 프로젝트
+                                 </p>
+                              </div>
+                           </div>
+                        <a>   
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project-center">
+                        <a href="https://brook-variraptor-54f.notion.site/Week03_HTML_TeamNarsha_Project-f5a9624a16a449c19088a73a078e1a41">
+                           <div class="polaroid">
+                              <img src="{{ url_for('static', filename='img/narsha_project.png') }}" alt="destination image">
+                              <div class="caption">
+                                 <h3 class="title">Django 자기소개 페이지 제작</h3>
+                                 <p>
+                                 
+                                 </p>
+                                 <p>
+                                 - 목적: 기본적인 HTML/CSS의 구조와 django 작동방식을 파악
+                                 </p>
+                              </div>
+                           </div>
+                        <a>   
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project-center">
+                        <a href="#">
+                           <div class="polaroid">
+                              <img src="{{ url_for('static', filename='img/bobbobdirara_project.png') }}" alt="destination image">
+                              <div class="caption">
+                                 <h3 class="title-personal">[PERSONAL] 밥밥디라라 학식당 메뉴 프로그램</h3>
+                                 <p>
+                                 - 목적: 홈페이지를 들어가서 확인하는 번거로움을 줄이기 위해 제작
+                                 </p>
+                                 <p>
+                                 - 역할: 크롤링, tkenter를 통한 레이아웃 디자인 및 실행
+                                 </p>
+                              </div>
+                           </div>
+                        <a>   
+                     </div> 
+                  </div>
+                  <div class="col-md-12 col-xs-24">
+                     <div class="project-center">
+                        <a href="https://brook-variraptor-54f.notion.site/taxis-0872ef2d87584dc1b51edc7530382e24">
+                           <div class="polaroid">
+                              <img src="{{ url_for('static', filename='img/taxi_project.png') }}" alt="destination image">
+                              <div class="caption">
+                                 <h3 class="title-personal">[PERSONAL] Taxis.csv 데이터분석</h3>
+                                 <p>
+                                 -목적: 탐색적 데이터 분석(EDA)을 통한 택시 이용량 데이터 분석
+                                 </p>
+                              </div>
+                           </div>
+                        <a>   
+                     </div> 
+                  </div>
+                  <div class="load-boats-box">
+                     <div class="col-sm-12 col-xs-24">
+                        <div class="project-center">
+                           <a href="#">
+                              <div class="polaroid">
+                                 <img src="{{ url_for('static', filename='img/destination-1.jpg') }}" alt="destination image">
+                                 <div class="caption">
+                                    <h3 class="title"></h3>
+                                    <p>
+                                    첫번쨰 프로젝트
+                                    </p>
+                                 </div>
+                              </div>
+                           <a>   
+                        </div> 
+                     </div>                           
+                     <div class="col-sm-12 col-xs-24">
+                        
+                     </div>
+                  </div>
+               </div>
+
+               <div class="align-center">
+                  <a href="#" class="btn btn-default btn-load-boats"><span class="text">Load more boats</span><i class="icon-spinner6"></i></a>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-9">
+                  <div class="widget widget_social">
+                     <h5 class="widget-title">CONTACT</h5>
+                     <p class="widget-p">TEL : 010-4663-7623</p>
+                     <p class="widget-p">KAKAO : gksfka12</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/functions.js') }}"></script>
+   </body>
+</html>
