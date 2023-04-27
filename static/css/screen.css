@@ -3699,7 +3699,24 @@ dscript-time {
   color: #2e3b48;
   margin-bottom: 10px;
 }
-
+.resume .resume-item .point{
+  line-height: 14.5px;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #1a7cc8;
+  margin-bottom: 10px;
+}
+.resume .resume-item-final .point{
+  line-height: 14.5px;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #1a7cc8;
+  margin-bottom: 10px;
+}
 .resume .resume-item-final h4{
   line-height: 18px;
   font-size: 18px;
@@ -3731,7 +3748,6 @@ dscript-time {
 
 .resume .resume-item-final ul li, .resume .resume-item ul li {
   padding-bottom: 5px;
-  
 }
 
 .resume .resume-item:last-child {
