@@ -3860,42 +3860,32 @@ dscript-time {
   position: fixed;
   right: 8%;
   transform: translateX(50%);
-  bottom: 30%;
+  bottom: 5%;
   z-index: 9999;
+  text-align: center;
 }
 
 .floating-sidebar .btn {
   display: block;
   width: 50px;
   height: 50px;
-  border-radius: 0;
+  border-radius: 5%;
   background-color:  #ffffff;
   margin-bottom: 5px;
   text-align: center;
-  line-height: 50px;
+  line-height: 48px;
   color: #fff;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  border: 1px solid #0000006b;
-  
+  border: 2px solid #000000bc;
 }
 .floating-sidebar .btn:hover {
   background: #b1b5ba;
 }
 .floating-sidebar .btn.active {
-  background-color: #666;
+  background-color: #918f8fe5;
 }
-
-
-.floating-sidebar .btn img {
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  vertical-align: auto;
-}
-/*추가된 부분*/
-
 
 .floating-sidebar .btn:hover span {
   opacity: 1; /* 마우스를 올리면 투명도를 1로 설정하여 서서히 밝아지는 효과를 만듦 */
@@ -3912,25 +3902,91 @@ dscript-time {
   transition: opacity 1s ease; /* opacity 속성의 변화를 1초 동안 서서히 일어나도록 설정 */
 }
 
+.floating-sidebar .btn_name {
+  font-size: 15px;
+  color: rgb(2, 11, 38);
+  display: block;
+  font-weight: bolder;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.floating-sidebar .btn_name_project {
+  font-size: 11px;
+  color: rgb(2, 11, 38);
+  display: block;
+  font-weight: bolder;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.floating-sidebar .btn-project {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5%;
+  background-color:  #ffffff;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid #000000bc;
+}
 
-/*모바일 용*/
+.floating-sidebar .btn-project span {
+  display: none;
+  position: absolute;
+  left: 60px;
+  color: #3e3d48;
+  font-size: 16px;
+  font-weight: bolder;
+  opacity: 0; /* 초기에 투명도를 0으로 설정 */
+  transition: opacity 1s ease; /* opacity 속성의 변화를 1초 동안 서서히 일어나도록 설정 */
+}
+.floating-sidebar .btn-project:hover span {
+  opacity: 1; /* 마우스를 올리면 투명도를 1로 설정하여 서서히 밝아지는 효과를 만듦 */
+}
+.floating-sidebar .btn-project:hover {
+  background: #b1b5ba;
+}
+.floating-sidebar .btn-project.active {
+  background-color: #666;
+}
+.floating-sidebar #btn-arrow{
+  font-size: 18px; 
+  color:rgb(2, 11, 38);
+  display: block;
+  font-weight: bolder;
+  padding-bottom: 10%;
+  
+}
 @media (max-width: 767px) {
   .floating-sidebar {
     position: fixed;
     right: 5%;
     transform: translateX(50%);
-    bottom: 35%;
+    bottom: 5%;
     z-index: 9999;
+  }
+  .floating-sidebar #btn-arrow{
+    font-size: 15px; 
+    color:rgb(2, 11, 38);
+    display: block;
+    font-weight: bolder;
+    inline-size: auto;
   }
   .floating-sidebar .btn {
     display: block;
     width: 30px;
     height: 30px;
-
+    border-radius: 5%;
     background-color: #ffffff;
     margin-bottom: 5px;
     text-align: center;
-    line-height: 30px;
+    line-height: 27px;
     color: #fff;
     text-decoration: none;
   }
@@ -3938,7 +3994,14 @@ dscript-time {
     display: none;
     padding-left: 8px;
   }
+  .floating-sidebar .btn_name {
+    font-size: 5px; /* 수정된 부분 */
+  }
+  .floating-sidebar .btn .btn_name_project {
+    font-size: 5px; /* 수정된 부분 */
+  }
 }
+
 
 
 /*skill-bar*/

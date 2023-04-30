@@ -22,9 +22,7 @@
          });
        });
       </script>
-
       <link href="{{ url_for('static', filename='css/screen.css') }}" rel="stylesheet" />
-   
    </head>
    <body class="home" id="page">
       <!-- Header -->
@@ -57,13 +55,13 @@
                   <a href="#project" class="btn btn-special">Project</a>
                </nav>
                <div class="floating-sidebar">
-                  <a href="#main" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/bigforest_logo.png') }}" alt="Button 1" title="Main"><span>Main</span></a>
-                  <a href="#experience" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/experience.png') }}" alt="Button 2" title="Experience"><span>Experience</span></a>
-                  <a href="#club" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/explain.png') }}" alt="Button 3" title="Club"><span>Club</span></a>
-                  <a href="#award" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/trophy.png') }}" alt="Button 4" title="Award"><span>Award</span></a>
-                  <a href="#job" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/job-promotion.png') }}" alt="Button 5" title="Job"><span>Job</span></a>
-                  <a href="#education" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/book.png') }}" alt="Button 6" title="Education"><span>Education</span></a>
-                  <a href="#project" class="btn" data-color="#333"><img src="{{ url_for('static', filename='img/project-management.png') }}" alt="Button 7" title="Project"><span>Project</span></a>
+                  <a href="#main" class="btn" data-color="#333"><span>MAIN</span><p class="btn_name" id="btn-arrow">↑</p></a>
+                  <a href="#experience" class="btn" data-color="#333"><span>EXPERIENCE</span><p class="btn_name">경험</p></a>
+                  <a href="#club" class="btn" data-color="#333"><span>CLUB</span><p class="btn_name">동아리</p></a>
+                  <a href="#award" class="btn" data-color="#333"><span>AWARD</span><p class="btn_name">수상</p></a>
+                  <a href="#job" class="btn" data-color="#333"><span>JOB</span><p class="btn_name">직무</p></a>
+                  <a href="#education" class="btn" data-color="#333"><span>EDUCATION</span><p class="btn_name">교육</p></a>
+                  <a href="#project" class="btn" data-color="#333" style><span>PROJECT</span><p class="btn_name_project" style="line-height: 20px;">프로</p><p style="padding-botton">젝트</p></a>
                   <script>
                      const buttons = document.querySelectorAll('.btn');
                      buttons.forEach(button => {
@@ -78,6 +76,7 @@
                      });
                      });
                   </script>
+                  
                 </div> 
             </div>
          </div>
@@ -1084,7 +1083,11 @@
                               </div>
                            </div>
                         </div> 
-                     </div>   
+                     </div>
+                  </div>
+               </div>         
+               <div class="row">
+                  <div class="load-boats-box">
                      <div class="col-md-12 col-xs-24">
                         <div class="project">
                            <p class="script-title">🌟 [포스코 인터내셔널]<em> 신사업 아이디어 공모전 본선 진출</em></p>
@@ -1109,7 +1112,6 @@
                                     <p>- 프로젝트 채산성 분석</p>
                                     <p>- 스마트팜 업체 알가팜텍 컨택 및 협조 승인</p>
                                     <p>- ESG 적용방안 제시</p>
-                                    
                                  </ul>
                               </div>
                            </div>
@@ -1145,7 +1147,7 @@
                            </div>
                         </div> 
                      </div>
-                     
+                  
                      <div class="col-md-12 col-xs-24">
                         <div class="destination-box">   
                            <div class="box-cover">
@@ -1160,7 +1162,7 @@
                               </div>
                            </div>
                         </div> 
-                     </div>   
+                     </div>
                   </div>   
                </div>
                <div class="align-center">
