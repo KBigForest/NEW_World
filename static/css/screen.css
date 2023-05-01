@@ -3911,6 +3911,15 @@ dscript-time {
   text-overflow: ellipsis;
   max-width: 100%;
 }
+.floating-sidebar .btn_name_club {
+  font-size: 13px;
+  color: rgb(2, 11, 38);
+  display: block;
+  font-weight: bolder;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
 .floating-sidebar .btn_name_project1 {
   font-size: 13px;
   color: rgb(2, 11, 38);
@@ -3919,7 +3928,7 @@ dscript-time {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
-  line-height: 20px;
+  line-height: 24px;
 }
 .floating-sidebar .btn_name_project2{
   font-size: 13px;
@@ -3929,7 +3938,7 @@ dscript-time {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 100%;
-  line-height: 10px;
+  line-height: 0px;
 }
 .floating-sidebar .btn-project {
   display: block;
@@ -3991,13 +4000,13 @@ dscript-time {
   }
   .floating-sidebar .btn {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 5%;
     background-color: #ffffff;
     margin-bottom: 5px;
     text-align: center;
-    line-height: 27px;
+    line-height: 30px;
     color: #fff;
     text-decoration: none;
   }
@@ -4008,13 +4017,16 @@ dscript-time {
   .floating-sidebar .btn_name {
     font-size: 5px; /* 수정된 부분 */
   }
+  .floating-sidebar .btn_name_club {
+    font-size: 4px; /* 수정된 부분 */
+  }
   .floating-sidebar .btn .btn_name_project1 {
     font-size: 5px; /* 수정된 부분 */
-    line-height: 10px;
+    line-height: 18px;
   }
   .floating-sidebar .btn .btn_name_project2 {
     font-size: 5px; /* 수정된 부분 */
-    line-height: 10px;
+    line-height: 0px;
   }
 }
 
@@ -4096,6 +4108,11 @@ dscript-time {
   border-radius: 0;
 }
 
+.polaroid iframe{
+  width: 480px;
+  height: 230px;
+}
+
 .polaroid img {
   display: block;
   height: auto;
@@ -4153,7 +4170,11 @@ dscript-time {
     padding-right: 5px;
     padding-top: 3px;
   }
-
+  .polaroid iframe{
+    width: 430px;
+    height: 190px;
+  }
+  
   .polaroid .caption {
     position: static;
     height: auto;
@@ -4172,6 +4193,7 @@ dscript-time {
     margin-top: 0;
 
   }
+  
 }
 
 /* 태블릿 환경 */
