@@ -1,6 +1,20 @@
 ## [프로젝트] PORTFOLIO
 ---
-### 1. 프로젝트 소개
+### 목차
+#### 1. [프로젝트 소개](#프로젝트-소개)
+> (1) 기획의도 및 목적<br>
+> (2) 멤버구성 및 역할<br>
+> (3) 개발 기간<br>
+> (4) 개발 방향성 및 범위<br>
+> (5) 필요 기술 스택 및 개발 환경<br>
+#### 2. [프로젝트 세부내용](#프로젝트-세부내용)
+> (1) 구현 기능<br>
+> (2) 배운점 & 아쉬운 점<br>
+> (3) 이후의 계획
+---
+<br>
+
+### 프로젝트 소개
 
 #### (1) 기획의도 및 목적
 * 해당 포트폴리오를 작성하고 개선점을 반영하여 자기PR이 가능한 포트폴리오 완성 
@@ -16,13 +30,17 @@
 * 네비게이션 기능 확보, 상세보기 등 다양한 기능을 통한 가시성 및 사용자 편의 반영
 
 #### (5) 필요 기술 스택
-* 플라스크 활용
-* HTML/CSS문법 및 적용방법
-* CHATGPT활용 및 JS코드 도입
-* 시멘틱 코드(실제 도입하지는 않았지만 최대한 활용)
+- Environment<br><img src="https://img.shields.io/badge/windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/><br><img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+- Development
+  * tkinter
+  * beautifulsoup
+  * flask
+  * html/css
+  * js(chatgpt 활용)
++ 시멘틱 코드(실제 도입하지는 않았지만 약간의 개념 이해)
 
 ---
-### 2. 프로젝트 세부내용
+### 프로젝트 세부내용
 
 #### (1) [구현 기능](#구현-기능)
 **해당 기능은 모두 
